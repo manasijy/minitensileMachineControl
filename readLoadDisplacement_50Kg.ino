@@ -1,3 +1,14 @@
+// This code used the Q2HX711 library which is available on
+// github : https://github.com/queuetue/Q2-HX711-Arduino-Library
+// This library has a simple Arduino driver for the HX711 ADC, 
+// a low-cost strain gauge amplifier easily available online.
+// Ardiuno connection diagrams for ADC and linear scale can be found 
+// online. I will include it later.
+// The user has to calibrate his loadcell and determine the coefficients 
+// for the equation calculating load_N. I had used a setup for the loadcell 
+// to be tested on an instron machine. This sketch is for a 50Kg loadcell and 
+// a linear scale with a range of 300 mm.
+
 #include <Q2HX711.h>
 
 const byte hx711_data_pin = 6;
