@@ -1,4 +1,9 @@
-//20000 steps/rev
+// The stepper motor drive is set at 20000 steps/rev for smooth motion at lower cross-head speeds
+// setup the arduino (nano used here) pins
+// The motor is controlled through the serial monitor i/o
+// The pulse delay to control motor is adjusted for drive steps/rev of 20000
+// one need to verify the actual cross head speed and adjust the pulse delay accordingly
+
 #include <Wire.h>
 
 int PulsePin = 2; //Stepper pin
